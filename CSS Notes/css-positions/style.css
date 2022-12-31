@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.static{
+    position: static;
+    left: 50px;
+    padding: 40px;
+    border: 2px solid black;
+    width: 10%;
+    background-color: silver;
+}
+.fixed{
+    position: fixed;
+    padding: 50px;
+    border: 1px solid black;
+    background-color: cyan;
+    left: 10%;
+}
+.content{
+    
+    padding: 50px;
+    border: 3px dashed darkblue;
+    width: 7%;
+}
+.sticky{
+    position: sticky;
+    border: 2px solid black;
+    background-color: burlywood;
+    font-size: 30px;
+    font-weight: 800;
+    top: 2px;
+}
+.relative{
+    background-color: darkgrey;
+    height: 100px;
+    width: 100%;
+}
+.para{
+    position: relative;
+    border: 2px solid black;
+    padding: 10px;
+    left: 20%;
+    width: 50px;
+    background-color: tomato;
+    top: 30px;
+
+}
+
+/* absolute-position */
+.parent{
+    background-color:lightsalmon;
+    height: 100px;
+    width: 100%;
+    top: 90px;
+    position: relative;
+}
+.child{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: springgreen;
+}
+
+/* z-index */
+.main{
+    position: relative;
+    top: 150px;
+}
+.a, .b, .c, .d{
+    width: 100px;
+    height: 80px;
+    position: relative;
+}
+.a{
+    background-color: red;
+    top: 50px;
+    z-index: 3;
+}
+
+.b{
+    background-color: green;
+    top:-70px;
+    z-index: 1;
+}
+
+.c{
+    background-color: yellow;
+    top: -59px;
+    z-index: 2;
+}
+
+.d{
+    background-color: blue;
+    top: -216px;
+    z-index: 6;
+}

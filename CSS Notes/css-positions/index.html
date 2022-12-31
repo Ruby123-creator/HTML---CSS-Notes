@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- css positions: it is used to set position for an element , place an element behind an another using z-index and also use for scripted animation -->
+
+    <!-- static-position : default position of an element not effected by top ,right ,bottom ,left -->
+    <div class="main-container">
+        <div class="static">
+             <p>div-1</p>
+        </div>
+
+        <!-- fixed-position : it helps to put the text fixed in your screen and don't move even you scroll the window -->
+        <div class="fixed">
+            <p>div-2</p>
+        </div>
+        <div class="content">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio aspernatur nulla incidunt provident, velit saepe quaerat quae exercitationem dolore repudiandae, dicta porro facere. Quidem, modi dolor. Ipsam accusantium doloribus modi voluptates, harum fugiat, cumque, porro quasi molestiae culpa incidunt nulla. Id officia iure voluptatum optio aliquid quae, laborum commodi asperiores veritatis quaerat incidunt nulla ut ab consequatur, at sed hic maiores perspiciatis libero. Expedita iste labore ipsum blanditiis doloribus hic veritatis recusandae at ipsa! Alias consequuntur culpa optio</p>
+        </div>
+
+
+        <!-- sticky-position : element is positioned normal to the flow until it hits the top , after touching the top its position becomes sticky -->
+        <div class="sticky">
+            <p>div-3</p>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eligendi architecto vel! Voluptatem laboriosam veritatis architecto asperiores quam rerum eaque doloremque quia, suscipit beatae nostrum ab quidem officiis harum facilis fugit sint nulla fugiat maiores corrupti molestiae iure dolore saepe. Quibusdam repellendus dolore repudiandae nobis, cumque laudantium quaerat modi deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi tempora temporibus? Provident atque minima at quisquam, accusamus vero dicta rem quia commodi porro sunt omnis neque veritatis placeat cupiditate!</p>
+        </div>
+    </div>
+
+
+    <!-- relative-position : we can add offset values to move the element form its original position. it stays in the normal document flow -->
+    <div class="relative">
+        <p class="para">div-4</p>
+    </div>
+
+
+
+     <!-- absolute-position : to display the element relative to its first parent element that has position other than static. if no such element is present, the element is positioned according to the body  -->
+     <div class="parent">
+        <p class="child">div-5</p>
+     </div>
+
+
+
+     <!-- z-index : When elements are positioned, they can overlap other elements.The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others). An element can have a positive or negative stack order: -->
+     <div class="main">
+        <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+     </div> 
+     
+</body>
+</html>
