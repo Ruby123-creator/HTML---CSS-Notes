@@ -1,0 +1,42 @@
+.container1{
+    margin:30px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: thistle;
+    /* width = 30*2 + 2*2 +20*20 + 400 */
+}
+.container2{
+    margin-top: 50px;
+    margin-left: 50%;
+    padding: 20px 10px 8px 30px;
+    /* padding: top right bottom left; */
+    border: 1px solid red;
+    color: seagreen;
+    font-weight: 900;
+    width: 20%;
+}
+/* box-sizing :it allows us to include the padding and border in an elements total width and height */
+.container3{
+    margin:30px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: thistle;
+    box-sizing: border-box;
+    /* width = 400px*/
+}
+.display{
+    display: inline;
+}
+.block{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
