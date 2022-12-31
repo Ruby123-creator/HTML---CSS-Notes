@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* internal css */
+        h3{
+            color: blue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 1px solid black;
+        }
+    </style>
+    <!-- external css -->
+    <!-- it is the best way to link css because DRY(do not repeat yourself) and SRP(single resposibility principle) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- order of precendence -->
+    <!-- last position style  works if there is overridden in style   -->
+    <!-- inline css>internal css> external css >browser defaults-->
+
+    <!-- inline css -->
+    <p style="color: red; font-size: 20px; font-weight: 400;">this is para1</p>
+    <h3>this is heading</h3>
+
+
+    <!-- selectors : to select the particular line and div(container) -->
+    <!-- simple-selectors :- class ,id,tag-selector -->
+    <p class="para">this is class selector</p>
+    <!-- classname can be used again in a same document but id should be unique in the particular document  -->
+    <p class="para1" id="unique">this is id selector</p>
+    <h1>styles given by tag selector</h1>
+
+    <!-- combination selectors : we combine here two selectors -->
+    <!-- div is the most useful tag beacuse div is just like a container in which we give specific styles,designs and animate  -->
+    <div class="container">
+        <p >this is paragraph</p>
+        <p>this is para2</p>
+        <h2>the Animal</h2>
+        <span>
+            <p id="new">para 3</p>
+        </span>
+    </div>
+
+    <!-- pseudo-element selectors -->
+    <!-- it is used to style any specific part of the elements -->
+    <!-- Style the first letter, or line, of an element
+    Insert content before, or after, the content of an element -->
+    <p class="task">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi saepe, voluptatibus nobis adipisci quod <br> natus, numquam expedita nesciunt a non atque voluptate nisi itaque eveniet libero aperiam aspernatur. Cumque.
+    </p>
+    <ol>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ol>
+
+
+    <!-- pseudo-class selector -->
+    <!-- used to style a special type of state of any elements -->
+    <button type="submit" class="btn">submit</button>
+    <a href="#" target="_blank" class="link"> WEBSITE LINK </a>
+    <div >Hover over this element to show the p element
+        <p class="content">hey! ,I am here</p>
+
+    </div>
+
+
+
+    <!-- Attribute selector:used to select an element with some specific attribute or attribute value.  -->
+    <input type="text" name="name" class="name" placeholder="write your name">
+
+
+
+    <!-- specificty :a score/rank that determines which style declaration is ultimately applied to an element. -->
+   <!-- universal < tag ,pseudo-element < class ,pseudo-class ,attribute < id selector <inline style attribute <important rule -->
+    <!--    0             1                                10                   100           1000                   10000 -->
+     
+</body>
+</html>

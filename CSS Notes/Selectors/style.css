@@ -1,0 +1,118 @@
+/* class selector */
+.para{
+    background-color: aqua;
+    width: fit-content;
+}
+/* id selector */
+#unique{
+    text-align: end;
+    text-decoration:dashed;
+}
+/* tag selector */
+h3{
+    font-size: 40px;
+    color: seagreen;
+}
+/* group selectors */
+h1 ,.para ,#unique{
+    font-style: oblique;
+    text-shadow: gray;
+}
+/* universal selectors */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* combination selectors */
+/* descendant selectors (upcoming tags of main tags)*/
+.container p{
+  font-size:large;
+  color: chartreuse;
+}
+/* child selector(only for one generation parent) */
+span>p{
+    color: red;
+}
+/* adjacent sibling selector(siblings of single parents) */
+p+p{
+    background-color: blueviolet;
+    font: 900;
+    font: 20px;
+}
+/* general sibling selectors(siblings of same generations) */
+p~h1{
+    color : blue;
+}
+
+
+/* pseudo-element selectors */
+.task::first-line{
+    color: blueviolet;
+}
+.task::after{
+    content: "this is paragraph";
+    color: crimson; 
+}
+.task::first-letter{
+    font-size: 50px;
+}
+.task::before{
+    content: url(/images/bell.png) !important;
+}
+ ol::marker{
+    color: blue;
+    /* list-style-type: disc; */
+} 
+
+/* pseudo- class selector */
+.btn{
+    padding: 15px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+
+}
+.link:link{
+    color: violet;
+    /* by default blue is thecolour of any link */
+}
+.link:visited{
+    color: green;
+}
+.link:active{
+    color: tomato;
+}
+.content{
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+div:hover .content{
+    display: block;
+}
+p:first-child{
+    color: blue;
+}
+
+
+/* attribute selector */
+input[type="text"]{
+    color: darkblue;
+    font-size: larger;
+    background-color: yellow;
+}
+.link[target="_blank"]{
+    background-color: tomato;
+}
