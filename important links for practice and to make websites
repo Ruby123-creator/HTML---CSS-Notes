@@ -1,0 +1,47 @@
+# HTML---CSS-Notes
+Links for Resources to learn CSS:
+
+https://web.dev/learn/css/
+https://www.freecodecamp.org/
+https://www.w3schools.com/css/default.asp
+https://css-tricks.com/snippets/css/
+https://www.youtube.com/@TraversyMedia
+https://www.youtube.com/@freecodecamp
+https://www.youtube.com/@Techsithtube
+
+
+Links for Resources to practise:
+
+https://www.freecodecamp.org/learn/
+https://www.codecademy.com/catalog/subject/web-development
+https://bigfrontend.dev/
+
+
+links for making websites
+Bootstrap Links:-
+https://getbootstrap.com/docs/5.2/getting-started/introduction/
+css link : https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
+js link : https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+js popper link : https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js
+
+jquery cdn link
+https://cdnjs.com/libraries/jquery
+js link : https://code.jquery.com/jquery-3.6.0.min.js
+
+owl carousal link
+https://cdnjs.com/libraries/OwlCarousel2
+css link : https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css
+js link : https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
+
+google icons link
+https://fonts.google.com/
+https://fonts.googleapis.com/icon?family=Material+Icons
+
+fontawesome link
+https://cdnjs.com/libraries/font-awesome
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+
+aos cdn animation link
+https://cdnjs.com/libraries/aos
+https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css
+https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js
