@@ -116,3 +116,13 @@ input[type="text"]{
 .link[target="_blank"]{
     background-color: tomato;
 }
+
+/* inheritance */
+.parent-ele{
+   font-size: 20px;
+   color: seagreen;
+}
+.parent-ele p{
+    font-size: inherit;
+    color: inherit;
+}
