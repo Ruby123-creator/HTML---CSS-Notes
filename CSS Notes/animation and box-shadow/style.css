@@ -1,0 +1,62 @@
+.container{
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+    background-color: violet;
+    /* animation name can be anything of your desire */
+    animation-name: animate;
+
+    /* it is the duartion of one itertate animation  */
+    animation-duration: 5s;
+
+    /* how will it delay from its original time(0sec) */
+    animation-delay: 2s;
+
+    /* number of times it can be animated */
+    animation-iteration-count:2;
+
+    /* flow of direction of animation */
+    animation-direction: normal;
+
+
+    animation-fill-mode: both;
+
+    /* animation-timing-function:  */
+    /* ease: slow, fast, slow, 
+    linear: speed remains same,
+    ease-in: slow start,
+    ease-out: slow end,
+    ease-in-out: slow end and start, 
+    cubic-bezier(n,n,n,n):  */
+    animation-timing-function: ease-in;
+
+
+    /* short hand key :
+    animation: name duration timing-function delay iteration-count direction fill-mode; */ 
+}
+@keyframes animate{
+    0%{
+        transform:rotate(0deg);
+    }
+    30%{
+        transform:rotate(75deg);
+    }
+    60%{
+        transform:rotate(160deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* box-shadow */
+.btn{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 100px;
+    background-color: seagreen;
+    color: white;
+    box-shadow: 0 10px 20px rgba(15, 14, 14, 0.1);
+}
