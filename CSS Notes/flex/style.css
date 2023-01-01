@@ -1,0 +1,40 @@
+.container{
+    /* flex :to display the items in row by default */
+    display: flex;
+    
+    /* flex-direction: to change the direction of default layout of containers */
+    /* flex-direction: column ,column-reverse,row-reverse,row */
+    
+    flex-direction: row-reverse;
+    
+    /* flex-wrap: to wrap the layout in next line if there no enough space in that row */
+    flex-wrap: wrap;
+
+
+    background-color: turquoise;
+
+   /* justify-content: it is used to set the content of the parent element in x-axis; */
+   /* justify-content: center,end,flex-end,start,flex-start,baseline ,space-around ,space-between,space-evenly */
+      justify-content: center;
+
+
+      /* align-content:it is used to set the content of the parent element in y-axis
+      align-content: center,end,flex-end,start,flex-start,baseline ,space-around ,space-between,space-evenly */
+      align-content: end;
+
+
+      /* align-items: it is used to align the items of content */
+      align-items: center;
+
+
+      /* gap:it is used to get the gaps betwwen two contents */
+      column-gap: 150px;
+}
+.item1{
+    width: 50px;
+    height: 500px;
+
+    margin: 30px;
+    border: 1px solid black;
+    background-color: tomato;
+}
