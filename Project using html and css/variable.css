@@ -1,0 +1,16 @@
+:root{
+    /* font-style */
+    --primary-font : Quicksand;
+    --secondary-font : 'Poppins' ,sans-serif;
+    --normal-font : 400;
+    --bold-font : 800;
+
+
+    /* text-color */
+    color: seagreen;
+    color: dodgerblue;
+    color:silver;
+    color: pink;
+    
+
+}
