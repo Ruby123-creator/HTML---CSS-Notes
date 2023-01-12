@@ -6,13 +6,17 @@
 }
 .main-header{
     display: flex;
-    position: relative;
-    padding: 7px 100px;
-    background-color:rgb(97, 150, 120);
+    position: fixed;
+    padding: 2px 100px;
+    width: 100%;
+    line-height: 1.0;
+    z-index: 1000;
+    background-color:rgb(104, 156, 127);
    box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
 }
 .main-header .left-part{
     display: flex;
+    position: relative;
     align-items: center;
 }
 .left-part .image img:hover{
@@ -21,22 +25,19 @@
 .tagname span{
     font-size: 60px;
     font-weight:700;
-    
     font-style: italic;
     
 }
  .h1{
-    z-index: 400;
-    color: silver;
-    padding-left: 20px;
+   padding-left: 20px;
+   z-index: 100;
 }
 .h2{
-    position: relative;
-    
-    left: -53px;
-    top: -3px;
-    z-index: 20;
-
+   color: lightgrey;
+   position: relative;
+   left: -40px;
+   top: 3px;
+   z-index: -4; 
 }
 .right-part{
     align-items: center;
@@ -103,15 +104,20 @@
     background-size: cover;
     justify-content: center;
     align-items: center;
-
+    
 }
 .section-1 .content{
     display: flex;
     position: relative;
     top: 100px;
 }
+.content .image-side{
+    width: 50%;
+}
 .content .image-side  img{
-    width: 100%;
+    padding: 30px;
+    width: 600px;
+    height: 600px;
     animation: float 5s ease-in-out  infinite ;
     padding-left: 60px;
 }
@@ -130,23 +136,206 @@
 .section-1 .info-side{
     display: flex;
     flex-direction: column;
-
+     align-items: center;
     justify-content: center;
-    margin:0 70px;
+    margin:0 10px;
 }
 .info-side .title{
-    width: 40%;
     font-size: 25px;
     font-weight: 600;
-    color:gray;
-    font-family: Quicksand;
-    padding: 20px;
+    color:slategray;
     text-align: center;
+}
+.title p{
+    font-size: 22px;
+    margin-bottom: 30px;
 }
 .info-side .main-line{
     font-size: 60px;
     font-weight: 900;
+    text-align: center;
 }
 .main-line span{
-    color: seagreen;
+    color: rgb(52, 105, 75);
+}
+.section-2{
+    position: relative;
+    background-color: rgb(218, 241, 250);
+    width: 100%;
+    margin-top: 150px;
+    padding: 50px 20px;
+}
+.features .feature-top{
+    text-align: center;
+    margin: 30px;
+    position: relative;
+
+}
+.feature-top h3{
+    font-size: 25px;
+    color: lightslategrey;
+}
+.feature-top h1{
+    font-size: 40px;
+}
+.features .feature-section{
+    display: grid;
+    grid-template-columns: repeat(3,28%);
+    justify-content: space-around;
+    margin: 100px 30px;
+    align-items: center;
+}
+.feature-section .main{
+    border-radius: 15px;
+    margin:40px 20px;
+    padding: 35px;
+    position: relative;
+}
+.main.consultancy{
+    background-color: antiquewhite;
+}
+.main.consultancy:before{
+    content: url(/images/consultancy.png);
+    position: absolute;
+    display: block;
+    margin-top: -60px;
+}
+.main.tech{
+    background-color: thistle;
+}
+.main.tech:before{
+    content: url(/images/solutions.png);
+    position: absolute;
+    display: block;
+    margin-top: -60px;
+}
+.main.user{
+    background-color: turquoise;
+}
+.main.user:before{
+    content: url(/images/simple.png);
+    position: absolute;
+    display: block;
+    margin-top: -60px;
+}
+.main.deadline{
+    background-color:rgb(218, 215, 215);
+}
+.main.deadline:before{
+    content: url(/images/bell.png);
+    
+    position: absolute;
+    display: block;
+    margin-top: -60px;
+}
+.main.data{
+    background-color: pink;
+}
+.main.data:before{
+    content: url(/images/speaker.png);
+    position: absolute;
+    display: block;
+    margin-top: -60px;
+}
+.main.system{
+    background-color: navajowhite;
+}
+.main.system:before{
+    content: url(/images/bell.png);
+    position: absolute;
+    display: block;
+    margin-top: -60px;
+}
+.pricing{
+    background-color: whitesmoke;
+
+}
+.pricing .heading{
+    text-align: center;
+    padding: 40px;
+}
+.pricing .plan-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.pricing .heading h3{
+    color: gray;
+}
+.plan-content .plan{
+    margin: 15px;
+    padding:40px;
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 5px 5px 5px rgb(0 0 0 / 20%);
+}
+.plan-content img{
+    width: 300px;
+}
+.plan .head{
+    font-size: 20px;
+    font-weight: 700;
+    color: slategray;
+}
+.plan .content .days{
+    font-size: 15px;
+    font-weight: 550;
+    margin: 20px 0;
+}
+.plan .content .para{
+       font-weight: 500;
+       color: slategrey;
+}
+.btn1 button{
+    margin: 30px 0;
+    padding: 7px 25px;
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+    background-color:rgb(104, 156, 127);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+
+}
+.btn1.get button{
+    background-color:midnightblue;
+}
+.plan.plan-2{
+    border: 5px solid black;
+    height: 780px;
+    position: relative;
+    
+
+}
+.plan.plan-2 .pricing-ribbon {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0px;
+} 
+ .pricing-ribbon span {
+    
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 5px 0;
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    font-weight: 600;
+    /* text-shadow: 0 1px 1px rgb(0 0 0 / 20%); */
+    text-transform: uppercase;
+    text-align: center;
+    right: -45px;
+    top: 30px;
+    transform: rotate(-45deg);
 }
