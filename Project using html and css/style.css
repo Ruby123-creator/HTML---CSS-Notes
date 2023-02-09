@@ -339,3 +339,34 @@
     top: 30px;
     transform: rotate(-45deg);
 }
+label{
+    display: block;
+    width: 80px;
+    height: 40px;
+    background-color: dodgerblue;
+    border-radius: 30px;
+    position: relative;
+    left: 130px;
+    transition: all 0.5s;
+}
+input{
+    visibility: hidden;
+}
+label::before{
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    transition:  all 0.5s;
+}
+input:checked + label{
+    background-color: gray;
+}
+input:checked + label::before{
+    transform: translateX(40px);
+}
